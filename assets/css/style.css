@@ -1526,3 +1526,24 @@ section {
   color: #4e4e4e;
   display: inline-block;
 }
+
+#hero .carousel-title-main {
+  font-size: 56px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+#hero .carousel-title-sub {
+  font-size: 32px;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  #hero .carousel-title-main {
+    font-size: 36px;
+  }
+  
+  #hero .carousel-title-sub {
+    font-size: 24px;
+  }
+}
