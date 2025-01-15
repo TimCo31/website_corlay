@@ -141,6 +141,29 @@ h6 {
 
 #header .logo a {
   color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#header .logo .logo-main {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+#header .logo .logo-sub {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+@media (max-width: 768px) {
+  #header .logo .logo-main {
+    font-size: 20px;
+  }
+  
+  #header .logo .logo-sub {
+    font-size: 12px;
+  }
 }
 
 #header .logo img {
