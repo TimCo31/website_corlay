@@ -201,6 +201,7 @@ h6 {
 
 .navbar a,
 .navbar a:focus {
+  color: #fff;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -208,7 +209,6 @@ h6 {
   text-transform: uppercase;
   font-size: 12px;
   font-weight: 600;
-  color: #fff;
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -361,7 +361,7 @@ h6 {
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-  color: #428bca;
+  color: #df464d;
 }
 
 .navbar-mobile .getstarted,
@@ -580,8 +580,8 @@ section {
   font-weight: 700;
   padding: 8px 20px;
   margin: 0;
-  background: #f5f9fc;
-  color: #428bca;
+  background: #ffeaea;
+  color: #df464d;
   display: inline-block;
   text-transform: uppercase;
   border-radius: 50px;
@@ -594,7 +594,7 @@ section {
 }
 
 .section-title h3 span {
-  color: #428bca;
+  color: #df464d;
 }
 
 .section-title p {
@@ -771,6 +771,37 @@ section {
   100% {
     transform: scale(1, 1);
     opacity: 0;
+  }
+}
+
+.about-img {
+  width: 100%;
+  max-width: 400px;
+  padding: 0 0 0 20px;
+  margin-left: auto;
+}
+
+.about-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Adjust the column widths and spacing */
+.about .row .col-xl-5.col-lg-6:first-child {
+  width: 60%;
+  padding-right: 0;
+}
+
+.about .row .col-xl-5.col-lg-6:last-child {
+  width: 40%;
+  padding-left: 0;
+}
+
+@media (max-width: 992px) {
+  .about-img {
+    margin: 30px auto 0;
   }
 }
 
@@ -1046,18 +1077,32 @@ section {
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
-.testimonials .testimonials-carousel,
-.testimonials .testimonials-slider {
-  overflow: hidden;
+.testimonials .testimonial-item {
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
+  padding: 30px;
+  background: #fff;
+  margin-bottom: 30px;
+  height: 100%;  /* Added to ensure equal height */
 }
 
-.testimonials .testimonial-item {
-  width: 530px;
-  height: 190px;
-  padding: 40px;
-  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
-  position: relative;
-  background: #fff;
+.testimonials .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+  justify-content: center;  /* Added to center the boxes */
+  gap: 30px;  /* Added space between boxes */
+}
+
+.testimonials .col-lg-5 {
+  padding: 0 15px;
+  flex: 0 0 auto;
+  width: calc(40% - 15px);  /* Adjusted width with gap consideration */
+}
+
+@media (max-width: 992px) {
+  .testimonials .col-lg-5 {
+    width: 100%;
+  }
 }
 
 .testimonials .testimonial-item .testimonial-img {
@@ -1071,7 +1116,7 @@ section {
 .testimonials .testimonial-item h3 {
   font-size: 18px;
   font-weight: bold;
-  margin: 10px 0 5px 0;
+  margin: 10px 0 15px 0;
   color: #394047;
 }
 
@@ -1101,9 +1146,33 @@ section {
 }
 
 .testimonials .testimonial-item p {
-  font-style: italic;
-  margin: 15px 0 0 0;
+  font-style: normal;
+  margin: 5px 0;
   padding: 0;
+  line-height: 1.3;
+}
+
+/* Add styling for the method section */
+.testimonials .method-item {
+  text-align: left;
+  line-height: 1.6;
+  padding: 40px;
+  background: #fff;
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+}
+
+.testimonials .method-item p {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+/* Add some spacing between method points */
+.testimonials .method-item p + p {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #f0f0f0;
 }
 
 /*--------------------------------------------------------------
@@ -1472,8 +1541,8 @@ section {
   .card-blog {
     margin-bottom: 3rem;
     text-align: center;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
   }
 }
 
@@ -1581,4 +1650,10 @@ section {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   width: 100%;
   height: 200px;
+}
+
+/* And update the column width in the grid */
+.row.justify-content-center .col-lg-6 {
+  width: 80%;  /* Make the column wider */
+  max-width: 1000px;  /* Add a maximum width to maintain readability */
 }
