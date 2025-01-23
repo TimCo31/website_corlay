@@ -9,8 +9,16 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: 'Times New Roman', Times, serif;
-  color: #444444;
+  font-family: "Playfair Display", "Libre Baskerville", serif;
+  color: #2c3e50;
+}
+
+:root {
+  --primary-color: #2c3e50;    /* Dark blue */
+  --secondary-color: #34495e;  /* Lighter blue */
+  --accent-color: #c0392b;    /* Deep red accent */
+  --text-color: #2c3e50;
+  --light-bg: #f8f9fa;
 }
 
 a {
