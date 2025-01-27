@@ -1743,11 +1743,11 @@ section {
 }
 
 .quote-text {
-  font-size: 2.0rem;
+  font-size: 1.4rem !important;
   line-height: 1.4;
   color: var(--text-color);
   font-style: italic;
-  max-width: 1200px;
+  max-width: 800px;
   margin: 0 auto;
 }
 
@@ -1927,4 +1927,11 @@ section {
 
 .row.justify-content-center.g-0 {
   margin-top: 0 !important;
+}
+
+.small-quote {
+  font-size: 1.4rem !important;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.4;
 }
