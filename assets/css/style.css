@@ -1122,7 +1122,17 @@ section {
   bottom: 0;
   width: 50px;
   height: 2px;
-  background: #428bca;
+  background: #428bca;  /* Bleu par défaut */
+}
+
+/* Pour les titres avec soulignement rouge */
+.testimonial-item h3.red:after {
+  background: #df464d;  /* Rouge */
+}
+
+/* Pour les titres avec soulignement bleu */
+.testimonial-item h3.blue:after {
+  background: #428bca;  /* Bleu */
 }
 
 .testimonial-item p {
@@ -1753,14 +1763,6 @@ section {
   margin: 0 auto;
 }
 
-.small-quote {
-  font-size: 1.4rem !important;
-  max-width: 1000px;
-  margin: 0 auto;
-  line-height: 1.4;
-  margin-bottom: 10px !important;
-}
-
 .contact-subtitle {
   font-size: 1.6rem;
   line-height: 1.4;
@@ -1802,7 +1804,7 @@ section {
 
 .card-description {
   color: #f7f7f7;
-  font-size: 0.95rem;
+  font-size: 1.0rem;
   line-height: 1.6;
   margin-top: 1.5rem;
 }
@@ -1837,13 +1839,26 @@ section {
 
 .card-img img {
   max-width: 300px;
+  width: 100%;
   height: auto;
   border-radius: 8px;
 }
 
+@media (max-width: 768px) {
+  .card-img img {
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-img img {
+    max-width: 150px;
+  }
+}
+
 .modern-card .card-description {
   color: #000000 !important;  /* White text with !important to ensure override */
-  font-size: 0.95rem;
+  font-size: 1.0rem;
   line-height: 1.6;
   margin-top: 1.5rem;
 }
@@ -1936,4 +1951,20 @@ section {
 
 .row.justify-content-center.g-0 {
   margin-top: 0 !important;
+}
+
+.small-quote {
+  font-size: 1.4rem !important;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.4;
+}
+
+/* Icônes personnalisées */
+.bi-check2-circle.blue {
+  color: #428bca;  /* Bleu */
+}
+
+.bi-check2-circle.red {
+  color: #df464d;  /* Rouge */
 }
