@@ -579,7 +579,17 @@ section {
 
 .section-title {
   text-align: center;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
+}
+
+
+.section-title {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  margin-bottom: 1rem !important;
 }
 
 .section-title h2 {
@@ -1147,7 +1157,7 @@ section {
 
 .team .member {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   position: relative;
   overflow: hidden;
   border-radius: 4px;
@@ -1504,7 +1514,7 @@ section {
 --------------------------------------------------------------*/
 @media (min-width: 767px) {
   .card-blog {
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
     text-align: center;
     margin-left: 10%;
     margin-right: 10%;
@@ -1647,14 +1657,6 @@ section {
   margin-right: 2rem;
 }
 
-.section-title {
-  font-size: 2.5rem;
-  color: var(--primary-color);
-  margin-bottom: 2rem;
-  font-weight: 300;
-  letter-spacing: 0.5px;
-}
-
 .content-text {
   color: var(--text-color);
 }
@@ -1747,8 +1749,16 @@ section {
   line-height: 1.4;
   color: var(--text-color);
   font-style: italic;
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
+}
+
+.small-quote {
+  font-size: 1.4rem !important;
+  max-width: 1000px;
+  margin: 0 auto;
+  line-height: 1.4;
+  margin-bottom: 10px !important;
 }
 
 .contact-subtitle {
@@ -1764,7 +1774,7 @@ section {
   transition: all 0.3s ease;
   border: none;
   padding: 2rem;
-  margin: 2rem 0;
+  margin: 1rem 0;
 }
 
 .modern-card:hover {
@@ -1905,9 +1915,8 @@ section {
   margin-bottom: 2rem !important;
 }
 
-/* Adjust spacing for method item */
 .method-item {
-  margin-top: 1rem !important;  /* Small gap between title and content */
+  margin-top: 1rem !important;
 }
 
 .method-title h3 {
@@ -1927,11 +1936,4 @@ section {
 
 .row.justify-content-center.g-0 {
   margin-top: 0 !important;
-}
-
-.small-quote {
-  font-size: 1.4rem !important;
-  max-width: 800px;
-  margin: 0 auto;
-  line-height: 1.4;
 }
