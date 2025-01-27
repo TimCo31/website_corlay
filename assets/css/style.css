@@ -1112,7 +1112,17 @@ section {
   bottom: 0;
   width: 50px;
   height: 2px;
-  background: #428bca;
+  background: #428bca;  /* Bleu par défaut */
+}
+
+/* Pour les titres avec soulignement rouge */
+.testimonial-item h3.red:after {
+  background: #df464d;  /* Rouge */
+}
+
+/* Pour les titres avec soulignement bleu */
+.testimonial-item h3.blue:after {
+  background: #428bca;  /* Bleu */
 }
 
 .testimonial-item p {
@@ -1934,4 +1944,13 @@ section {
   max-width: 800px;
   margin: 0 auto;
   line-height: 1.4;
+}
+
+/* Icônes personnalisées */
+.bi-check2-circle.blue {
+  color: #428bca;  /* Bleu */
+}
+
+.bi-check2-circle.red {
+  color: #df464d;  /* Rouge */
 }
