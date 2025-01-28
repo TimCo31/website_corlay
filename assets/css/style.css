@@ -1977,7 +1977,7 @@ section {
 }
 
 .footer-links-section h4 {
-  color: #fff;
+  color: #428bca;  /* Changé de #fff à #428bca (bleu) */
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 15px;
