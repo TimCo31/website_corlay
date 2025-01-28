@@ -2048,3 +2048,40 @@ section {
     display: none;  /* Cache les séparateurs sur mobile */
   }
 }
+
+/* Ajustements pour la carte de présentation */
+@media (max-width: 768px) {
+  .modern-card {
+    padding: 1.5rem;  /* Réduire légèrement le padding sur mobile */
+    margin: 0.5rem 1rem;  /* Ajouter des marges horizontales */
+  }
+
+  .card-description {
+    font-size: 0.95rem;  /* Légèrement plus petit sur mobile */
+    line-height: 1.5;  /* Espacement des lignes réduit */
+    text-align: left;  /* Alignement à gauche pour une meilleure lecture */
+  }
+
+  /* Ajuster la largeur de la colonne sur mobile */
+  .row.justify-content-center .col-lg-6 {
+    width: 90%;  /* Utiliser plus de largeur disponible */
+    padding: 0;  /* Supprimer le padding par défaut */
+  }
+
+  /* Ajuster l'image */
+  .card-img img {
+    max-width: 200px;  /* Image plus petite sur mobile */
+    margin-bottom: 1rem;
+  }
+}
+
+/* Ajustements pour les très petits écrans */
+@media (max-width: 480px) {
+  .modern-card {
+    padding: 1rem;
+  }
+
+  .row.justify-content-center .col-lg-6 {
+    width: 95%;  /* Encore plus large sur très petits écrans */
+  }
+}
