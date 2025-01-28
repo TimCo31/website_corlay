@@ -1968,3 +1968,83 @@ section {
 .bi-check2-circle.red {
   color: #df464d;  /* Rouge */
 }
+
+/* Style pour la section liens utiles dans le footer */
+.footer-links-section {
+  text-align: center;
+  margin-bottom: 30px;
+  padding-top: 40px;  /* Ajout d'espace en haut */
+}
+
+.footer-links-section h4 {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  color: #428bca;
+}
+
+/* Style pour la ligne de contact dans le footer */
+.footer-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;  /* Augmenté l'espace entre les éléments */
+  padding: 30px 0;  /* Plus d'espace vertical */
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+}
+
+.footer-contact span {
+  color: #fff;
+  font-size: 16px;  /* Taille de police augmentée */
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;  /* Pour le séparateur */
+}
+
+/* Ajout des séparateurs verticaux */
+.footer-contact span:not(:last-child)::after {
+  content: '|';
+  position: absolute;
+  right: -25px;  /* Position du séparateur */
+  color: rgba(255, 255, 255, 0.3);  /* Couleur plus douce pour le séparateur */
+}
+
+.footer-contact i {
+  font-size: 18px;  /* Icônes plus grandes */
+  color: #428bca;
+}
+
+/* Responsive design pour mobile */
+@media (max-width: 768px) {
+  .footer-contact {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .footer-contact span:not(:last-child)::after {
+    display: none;  /* Cache les séparateurs sur mobile */
+  }
+}
