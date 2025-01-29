@@ -1,9 +1,3 @@
-/**
-* Template Name: Hidayah - v4.9.0
-* Template URL: https://bootstrapmade.com/hidayah-free-simple-html-template-for-corporate/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 (function() {
   "use strict";
 
@@ -125,11 +119,11 @@
       e.preventDefault()
 
       let navbar = select('#navbar')
+      let navbarToggle = select('.mobile-nav-toggle');
       if (navbar.classList.contains('navbar-mobile')) {
         navbar.classList.remove('navbar-mobile')
-        let navbarToggle = select('.mobile-nav-toggle')
-        navbarToggle.classList.toggle('bi-list')
         navbarToggle.classList.toggle('bi-x')
+        navbarToggle.classList.toggle('bi-list')
       }
       scrollto(this.hash)
     }
